@@ -1,0 +1,18 @@
+[package]
+name = "Tigr_os"
+version = "0.1.0"
+edition = "2018"
+
+
+# Указываем, что крейт не использует стандартную библиотеку
+[profile.dev]
+panic = "abort"  # отключаем unwinding (опционально)
+
+[profile.release]
+panic = "abort"  # отключаем unwinding (опционально)
+
+
+# Если используете `core` без `std`:
+[dependencies]
+rustc-std-workspace-core = { version = "1.0", optional = true }
+bootloader = "0.9"

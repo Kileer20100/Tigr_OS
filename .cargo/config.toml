@@ -1,0 +1,9 @@
+# in .cargo/config.toml
+
+[unstable]
+build-std = ["core", "compiler_builtins"]
+build-std-features = ["compiler-builtins-mem"]
+
+
+[build]
+target = "x86_64-Tigr_os.json"
