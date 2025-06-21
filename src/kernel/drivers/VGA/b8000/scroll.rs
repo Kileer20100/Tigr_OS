@@ -6,7 +6,7 @@ pub unsafe fn scroll_control(text: &'static str){
 
     let hello: &[u8] = text.as_bytes();
 
-    for i in 0..10 {
+    for i in 0..9 {
         for _ in 0..2000 * 1000 {
             unsafe { core::arch::asm!("nop"); }
         }
