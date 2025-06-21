@@ -10,6 +10,7 @@ mod kernel;
 pub extern "C" fn _start() -> ! {
 
     unsafe {
+
         testVGA();
     }
     
